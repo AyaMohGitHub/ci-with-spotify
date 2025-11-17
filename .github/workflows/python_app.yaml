@@ -55,12 +55,12 @@ jobs:
     # This step runs the linter against the codebase
     # TODO: Replace the run block to use our preferred linter
     - name: Lint with flake8
-      run: uv run ruff check
+      run: uvx ruff check
 
     # TODO: Add steps to run formatting steps and type checking
      
     - name: Format code
-      run: uv run ruff format
+      run: uvx ruff format
 
     - name: Type check code
-      run: uv run pyright
+      run: uvx pyright
